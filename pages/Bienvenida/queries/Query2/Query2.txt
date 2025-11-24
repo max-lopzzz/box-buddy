@@ -1,0 +1,1 @@
+SELECT * FROM public."inv_productos" LIMIT 10;

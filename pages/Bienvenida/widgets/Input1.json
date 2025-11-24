@@ -1,0 +1,75 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 46,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "validation"
+    },
+    {
+      "key": "errorMessage"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "errorMessage": "{{ /^[A-Za-z_][A-Za-z0-9_]*$/.test(Input1.text) \n    ? \"\" \n    : \"Nombre de tabla inválido. Debe comenzar con una letra o guion bajo y contener solo letras, números o guiones bajos.\"\n}}",
+  "iconAlign": "right",
+  "iconName": "box",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "1vpwv7ni9f",
+  "label": "Nombre de tu inventario:",
+  "labelAlignment": "left",
+  "labelPosition": "Auto",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 5,
+  "maxChars": "64",
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 46,
+  "mobileLeftColumn": 17,
+  "mobileRightColumn": 37,
+  "mobileTopRow": 39,
+  "needsErrorInfo": false,
+  "onSubmit": "{{storeValue('table_name', Input1.text).then(() => {\n  Query1.run();\n  navigateTo('Scan', {}, 'SAME_WINDOW');\n});}}",
+  "originalBottomRow": 46,
+  "originalTopRow": 39,
+  "parentColumnSpace": 6.84375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "inv_productos",
+  "regex": "^[A-Za-z_][A-Za-z0-9_]*$",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 59,
+  "showStepArrows": false,
+  "tooltip": "Usa solo letras, números y guiones bajos; no uses espacios ni caracteres especiales.",
+  "topRow": 39,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "{{ /^[A-Za-z_][A-Za-z0-9_]*$/.test(Input1.text) }}",
+  "version": 2,
+  "widgetId": "kphrxo6nk1",
+  "widgetName": "Input1"
+}

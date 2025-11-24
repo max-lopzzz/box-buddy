@@ -1,0 +1,10 @@
+CREATE TABLE {{ appsmith.store.table_name }} (
+    id TEXT PRIMARY KEY,
+    nombre TEXT,
+    descripcion TEXT,
+    categoria TEXT,
+    subcategoria TEXT,
+    costo NUMERIC(10,2),
+    precio NUMERIC(10,2),
+    foto TEXT
+);
